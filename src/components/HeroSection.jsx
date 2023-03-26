@@ -34,6 +34,7 @@ const HeroSection = ({ myData: { name, imageAlt } }) => {
           <div className="hero-section-image">
             <figure>
               <img
+                style={{ borderRadius: "1rem" }}
                 src="https://st4.depositphotos.com/8016438/23498/i/600/depositphotos_234987066-stock-photo-male-programmer-working-on-laptop.jpg"
                 alt={imageAlt}
                 className="img-style"
