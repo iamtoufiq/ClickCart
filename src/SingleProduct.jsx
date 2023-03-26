@@ -22,7 +22,7 @@ const SingleProduct = () => {
   const { name, company, price, description, stock, stars, reviews, image } =
     singleProduct;
   useEffect(() => {
-    console.log("do");
+    // console.log("do");
     getSingleProduct(`${API}?id=${ids}`);
   }, [ids]);
 
