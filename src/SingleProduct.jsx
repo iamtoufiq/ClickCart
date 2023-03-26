@@ -19,24 +19,17 @@ const SingleProduct = () => {
   //singleProduct --> this is the single product details
 
   const { id: ids } = useParams();
-  const {
-    // id: alias,
-    name,
-    company,
-    price,
-    description,
-    stock,
-    stars,
-    reviews,
-    image,
-  } = singleProduct;
+  const { name, company, price, description, stock, stars, reviews, image } =
+    singleProduct;
   useEffect(() => {
+    console.log("do");
     getSingleProduct(`${API}?id=${ids}`);
-  }, []);
+  }, [ids]);
 
   if (isSingleLoading) {
     return <div className="page_loading">Loading.....</div>;
   }
+
   return (
     <Wrapper>
       <PageNavigation title={name} />

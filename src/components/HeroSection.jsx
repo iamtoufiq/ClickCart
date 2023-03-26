@@ -1,39 +1,37 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
-// import { useProductContext } from "../context/productcontex";
 
-const HeroSection = ({ myData }) => {
-  // const { products } = useProductContext();
-
-  const { name, imageAlt } = myData;
-
+const HeroSection = ({ myData: { name, imageAlt } }) => {
   return (
     <Wrapper>
-      <div className="container" style={{ border: "2px solid red" }}>
+      <div className="container">
         <div className="grid grid-two-column">
-          <div
-            className="hero-section-data"
-            style={{ border: "2px solid orange" }}
-          >
+          <div className="hero-section-data">
             <p className="intro-data" style={{ color: "#15a300" }}>
-              Welcome to{" "}
+              Welcome to
             </p>
-            <h1> {name} </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              atque temporibus veniam doloribus libero ad error omnis voluptates
-              animi! Suscipit sapiente.
-            </p>
+            <h1>
+              <i> {name}</i>
+            </h1>
+            <i>
+              <p>
+                As a web developer with a passion for creating user-friendly
+                websites, I bring a unique blend of technical and creative
+                skills to the table. With&nbsp;
+                <strong style={{ color: "rgb(21, 163, 0)" }}>
+                  proficiency in HTML, CSS, JavaScript, and React.js&nbsp;
+                </strong>
+                , I am well-equipped to build modern, responsive, and visually
+                appealing websites that provide exceptional user experiences.
+              </p>
+            </i>
             <NavLink to="/">
               <Button>show now</Button>
             </NavLink>
           </div>
           {/* our homepage image  */}
-          <div
-            className="hero-section-image"
-            style={{ border: "2px solid red" }}
-          >
+          <div className="hero-section-image">
             <figure>
               <img
                 src="https://st4.depositphotos.com/8016438/23498/i/600/depositphotos_234987066-stock-photo-male-programmer-working-on-laptop.jpg"

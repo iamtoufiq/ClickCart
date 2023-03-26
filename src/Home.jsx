@@ -6,7 +6,7 @@ import FeatureProduct from "./components/FeatureProduct";
 
 const Home = () => {
   const data = {
-    name: "Taufique Home",
+    name: "Introduction",
     imageAlt: "This is the heroImage",
   };
   return (

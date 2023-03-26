@@ -4,19 +4,16 @@ import Product from "./Product";
 
 const FeatureProduct = () => {
   const { isLoading, featureProducts } = useProductContext();
-
-  if (isLoading) {
-    return <div> ......Loading </div>;
-  }
-
-  return (
+  return isLoading ? (
+    <div>......Loading</div>
+  ) : (
     <Wrapper className="section">
       <div className="container">
-        <div className="common-heading">Our Feature Services</div>
+        <div className="common-heading">Our Core Services</div>
         <div className="grid grid-three-column">
-          {featureProducts.map((curElem) => {
-            return <Product key={curElem.id} {...curElem} />;
-          })}
+          {featureProducts.map((curElem) => (
+            <Product key={curElem.id} {...curElem} />
+          ))}
         </div>
       </div>
     </Wrapper>

@@ -4,39 +4,36 @@ const Trusted = () => {
   return (
     <Wrapper className="brand-section">
       <div className="container">
-        <h3>Trusted By 1000+ Companies</h3>
-        <div
-          className="brand-section-slider"
-          style={{ border: "2px solid red" }}
-        >
+        <h3>Trusted Partner Of 1000+ Companies</h3>
+        <div className="brand-section-slider">
           {/* my 1st img  */}
-          <div className="slide" style={{ border: "2px solid blue" }}>
+          <div className="slide">
             <img
-              src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image2.png"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
               alt="trusted-brands"
             />
           </div>
-          <div className="slide" style={{ border: "2px solid blue" }}>
+          <div className="slide">
             <img
-              src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image3.png"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/800px-Chennai_Super_Kings_Logo.svg.png"
               alt="trusted-brands"
             />
           </div>
-          <div className="slide" style={{ border: "2px solid blue" }}>
+          <div className="slide">
             <img
-              src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image4.png"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Royal_Challengers_Bangalore_2020.svg/1200px-Royal_Challengers_Bangalore_2020.svg.png"
               alt="trusted-brands"
             />
           </div>
-          <div className="slide" style={{ border: "2px solid blue" }}>
+          <div className="slide">
             <img
-              src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image6.png"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Delhi_Capitals_Logo.svg/1200px-Delhi_Capitals_Logo.svg.png"
               alt="trusted-brands"
             />
           </div>
-          <div className="slide" style={{ border: "2px solid blue" }}>
+          <div className="slide">
             <img
-              src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image8.png"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/1200px-Kolkata_Knight_Riders_Logo.svg.png"
               alt="trusted-brands"
             />
           </div>

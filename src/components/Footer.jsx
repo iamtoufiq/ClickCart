@@ -9,10 +9,10 @@ const Footer = () => {
     <Wrapper>
       <section className="contact-short">
         <div className="grid grid-two-column">
-          <div style={{ color: "#15a300" }}>
+          <strong>
             <h3>Are you prepared to begin?</h3>
             <h3>Contact us now.</h3>
-          </div>
+          </strong>
 
           <div className="contact-short-btn">
             <NavLink to="/">
@@ -28,13 +28,19 @@ const Footer = () => {
         <div className="container grid grid-four-column">
           {/* 1st number column */}
           <div className="footer-about">
-            <h3>Toufiq Choudhari</h3>
-            <p>Things aren’t always #000000 and #FFFFFF .</p>
+            <h3 className="heading-shadow">Toufiq Choudhari</h3>
+            <p className="text-shadow">
+              Things aren’t always #000000 and #FFFFFF .
+            </p>
           </div>
 
           {/* 2nd number column */}
           <div className="footer-subscribe">
-            <h3>Send an email to get new updates.</h3>
+            <h3>
+              <strong className="heading-shadow">
+                Send an email to get new updates.
+              </strong>
+            </h3>
             <form action="https://formspree.io/f/xwkjklkd" method="POST">
               <input
                 type="email"
@@ -49,7 +55,9 @@ const Footer = () => {
 
           {/* 3rd number column  */}
           <div className="footer-social">
-            <h3>Follows Us</h3>
+            <h3>
+              <strong className="heading-shadow">Follows Us</strong>
+            </h3>
             <div className="footer-social--icons">
               <div>
                 <a
@@ -84,9 +92,21 @@ const Footer = () => {
 
           {/* 4th number column  */}
           <div className="footer-contact">
-            <h3>Call Us</h3>
-            <h3>+91- 9359550208</h3>
-            <h3>imtoufiq2@gmail.com</h3>
+            <h3>
+              <strong className="heading-shadow">Call Us</strong>
+            </h3>
+            <h3>
+              <a href="tel:9359550208" className="color-white text-shadow">
+                9359550208
+              </a>
+              <br />
+              <a
+                href="mailto:imtoufiq2@gmail.com"
+                className="color-white text-shadow"
+              >
+                imtoufiq2@gmail.com
+              </a>
+            </h3>
           </div>
         </div>
 
@@ -94,8 +114,10 @@ const Footer = () => {
         <div className="footer-bottom--section">
           <hr />
           <div className="container grid grid-two-column">
-            <p>@{new Date().getFullYear()} All Rights Reserved</p>
-            <div>
+            <p className="text-shadow">
+              @{new Date().getFullYear()} All Rights Reserved
+            </p>
+            <div className="text-shadow">
               <p>PRIVACY POLICY</p>
               <p>TERMS & CONDITIONS</p>
             </div>
@@ -119,6 +141,15 @@ const Wrapper = styled.section`
   .contact-short-btn {
     justify-self: end;
     align-self: center;
+  }
+  .heading-shadow {
+    text-shadow: red 2px 2px 2px;
+  }
+  .text-shadow {
+    text-shadow: green 2px 2px 2px;
+  }
+  .color-white {
+    color: #fff;
   }
   footer {
     padding: 14rem 0 9rem 0;
@@ -154,6 +185,7 @@ const Wrapper = styled.section`
       }
     }
   }
+
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     .contact-short {
       max-width: 95vw;
